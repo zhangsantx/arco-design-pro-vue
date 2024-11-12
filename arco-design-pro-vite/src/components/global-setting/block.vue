@@ -45,7 +45,7 @@
     value: unknown;
   }) => {
     if (key === 'colorWeak') {
-      document.body.style.filter = value ? 'invert(80%)' : 'none';
+      document.documentElement.style.filter = value ? 'invert(80%)' : 'none';
     }
     if (key === 'menuFromServer' && value) {
       await appStore.fetchServerMenuConfig();
